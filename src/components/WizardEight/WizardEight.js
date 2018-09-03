@@ -13,9 +13,9 @@ class WizardEight extends Component {
                     <div className="vert-align">                    
                         <p>Have you had a bankruptcy or foreclosure in the past seven years? </p><br />
                     <div className="row">
-                        <Link to="/wNine"><button value="Has never been in bankruptcy" onClick={() => updateHistory("No")}>No</button></Link>
-                        <Link to="/wNine"><button value="Has had bankruptcy before" onClick={() => updateHistory("Bankruptcy")}>Bankruptcy</button></Link>
-                        <Link to="/wNine"><button value="Has had a foreclosure before" onClick={() => updateHistory("Foreclosure")}>Foreclosure</button></Link>
+                        <Link to="/wNine"><button value="Has never been in bankruptcy" onClick={(e) => updateHistory(e.target.value)}>No</button></Link>
+                        <Link to="/wNine"><button value="Has had bankruptcy before" onClick={() => updateHistory(e.target.value)}>Bankruptcy</button></Link>
+                        <Link to="/wNine"><button value="Has had a foreclosure before" onClick={() => updateHistory(e.target.value)}>Foreclosure</button></Link>
                         <Link to="/wNine"><button value="Has had both a foreclosure and a bankruptcy" onClick={() => updateHistory("Both")}>Both</button></Link>
                     </div>
                 </div>
